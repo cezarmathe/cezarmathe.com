@@ -1,0 +1,118 @@
+
+baseurl = "https://cezarmathe.com"
+title = "Cezar Mathe"
+theme = "hello-friend-ng"
+
+DefaultContentLanguage = "en"
+
+PygmentsCodefences = false
+PygmentsUseClasses = false
+PygmentsStyle = "monokai"
+
+rssLimit  = 10
+copyright = "<a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\" target=\"blank\" rel=\"noopener\">CC BY-NC-SA 4.0<a>"
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpored = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = true
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+[permalinks]
+  posts = "/posts/:year-:month-:day-:title"
+
+[author]
+  name = "Cezar Mathe"
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[taxonomies]
+  tag      = "tags"
+  category = ""
+
+[params]
+  dateform        = "2 Jan 2006"
+  dateformShort   = "2 Jan"
+  dateformNum     = "02-01-2006"
+  dateformNumTime = "15:04 -0700 02-01-2006"
+
+  description = "A blog and a website that connects my online presence" 
+  keywords = "homepage, blog, development, programming, personal, portfolio, online-presence"
+  images = [""]
+
+  homeSubtitle = "A blog and a website that connects my online presence"
+
+  gitUrl = "https://github.com/cezarmathe/cezarmathe.github.io/commit/"
+
+  customCSS = []
+  customJS  = []
+
+  justifyContent = false
+
+  contentTypeName = "posts"
+
+  defaultTheme = "dark"
+  themeColor = "#252627"
+
+  [params.logo]
+    logoText     = "$ cd ${HOME}"
+    logoHomeLink = "/"
+
+  # Social icons
+  [[params.social]]
+    name = "email"
+    url  = "mailto:cezarmathe@gmail.com"
+
+  [[params.social]]
+    name = "github"
+    url  = "http://bit.ly/2J17YqZ"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "http://bit.ly/2L4YX2z"
+
+[languages]
+  [languages.en]
+    subtitle = "Homepage & blog"
+    weight = 1
+
+    [languages.en.params.logo]
+      logoText = "$ cd ${HOME}"
+      logoHomeLink = "/"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about"
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
+  [[menu.main]]
+    identifier = "contact"
+    name       = "Contact"
+    url        = "/contact"
+  [[menu.main]]
+    identifier = "portfolio"
+    name       = "Portfolio"
+    url        = "/portfolio"
+  [[menu.main]]
+    identifier = "cv"
+    name       = "CV"
+    url        = "/cv.pdf"
