@@ -1,0 +1,23 @@
+<div class="contact-list">
+    <br/>
+    <div class="personal">
+        <h2>You can contact me directly here:</h1><br/>
+        {{ partial "onlinePresenceLinks.html" .Site.Data.onlinePresence.contact }}
+    </div>
+    <br/><br/>
+    <div class="freelance">
+        <h2>See my freelancer profiles here:</h1><br/>
+        {{ partial "onlinePresenceLinks.html" .Site.Data.onlinePresence.freelancing }}
+    </div>
+    <br/><br/>
+    <div class="profiles">
+        <h2>Visit one of my online profiles:</h1><br/>
+            {{ partial "onlinePresenceLinks.html" .Site.Data.onlinePresence.profiles }}
+    </div>
+    <br/><br/>
+    <div class="other">
+        <h2>Other links related to me:</h1><br/>
+        {{ partial "onlinePresenceLinks.html" .Site.Data.onlinePresence.other }}
+    </div>
+</div>
+

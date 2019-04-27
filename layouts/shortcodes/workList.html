@@ -1,0 +1,7 @@
+{{ range .Site.Data.work }}
+<h2>
+  <a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>
+</h2>
+<p>{{ .description }}</p>
+<br />
+{{- end }}

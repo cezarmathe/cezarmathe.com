@@ -1,16 +1,19 @@
-
-baseurl = "https://cezarmathe.com"
+# general
+baseURL = "https://cezarmathe.com"
 title = "Cezar Mathe"
-theme = "hello-friend-ng"
 
 DefaultContentLanguage = "en"
 
-PygmentsCodefences = false
-PygmentsUseClasses = false
+theme = "hello-friend-ng"
+
+googleAnalytics = "UA-131673959-1"
+
+PygmentsCodefences = true
+PygmentsUseClasses = true
 PygmentsStyle = "monokai"
 
-rssLimit  = 10
-copyright = "<a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\" target=\"blank\" rel=\"noopener\">CC BY-NC-SA 4.0<a>"
+# rssLimit  = 10
+copyright = "This work is licensed under a Attribution-NonCommercial-ShareAlike 4.0 International License."
 
 archetypeDir = "archetypes"
 contentDir   = "content"
@@ -41,9 +44,9 @@ disableHugoGeneratorInject = false
 [blackfriday]
   hrefTargetBlank = true
 
-[taxonomies]
-  tag      = "tags"
-  category = ""
+# [taxonomies]
+#   tag      = "tags"
+#   category = ""
 
 [params]
   dateform        = "2 Jan 2006"
@@ -51,14 +54,18 @@ disableHugoGeneratorInject = false
   dateformNum     = "02-01-2006"
   dateformNumTime = "15:04 -0700 02-01-2006"
 
-  description = "A blog and a website that connects my online presence" 
+  # Document head
+  description = "A blog and a website that connects my online presence." 
   keywords = "homepage, blog, development, programming, personal, portfolio, online-presence"
   images = [""]
 
-  homeSubtitle = "A blog and a website that connects my online presence"
+  # Subtitle on the homepage
+  homeSubtitle = "Student"
 
+  # URL prefix for commits
   gitUrl = "https://github.com/cezarmathe/cezarmathe.github.io/commit/"
 
+  # custom
   customCSS = []
   customJS  = []
 
@@ -67,7 +74,6 @@ disableHugoGeneratorInject = false
   contentTypeName = "posts"
 
   defaultTheme = "dark"
-  themeColor = "#252627"
 
   [params.logo]
     logoText     = "$ cd ${HOME}"
@@ -86,10 +92,12 @@ disableHugoGeneratorInject = false
     name = "linkedin"
     url  = "http://bit.ly/2L4YX2z"
 
+# language stuff
 [languages]
   [languages.en]
-    subtitle = "Homepage & blog"
+    subtitle = "A blog and a website that connects my online presence."
     weight = 1
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>'
 
     [languages.en.params.logo]
       logoText = "$ cd ${HOME}"
@@ -116,3 +124,21 @@ disableHugoGeneratorInject = false
     identifier = "cv"
     name       = "CV"
     url        = "/cv.pdf"
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    disable = false
+    respectDoNotTrack = true
+    useSessionStorage = false
+  [privacy.instagram]
+    disable = true
+  [privacy.twitter]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = true
