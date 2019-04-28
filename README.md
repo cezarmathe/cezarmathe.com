@@ -27,7 +27,7 @@ The theme I used is [hello friend ng](https://themes.gohugo.io/hugo-theme-hello-
 
 ## Licensing
 
-This project's license can be found [here](https://github.com/cezarmathe/personal-website/blob/master/LICENSE). This applies to all the contents of this repository, except the contents and subfolders of the folders that contain a `LICENSE` file. These are licensed under that file's license.
+This project's license can be found [here](https://github.com/cezarmathe/personal-website/blob/master/LICENSE). This applies to all the contents of this repository, except the contents and subfolders of the folders that contain a `LICENSE` file and the folder `data`. These are licensed under that file's license.
 
 ## How to build
 
