@@ -63,7 +63,7 @@ disableHugoGeneratorInject = false
   homeSubtitle = "Student"
 
   # URL prefix for commits
-  gitUrl = "https://github.com/cezarmathe/cezarmathe.github.io/commit/"
+  gitUrl = "https://github.com/cezarmathe/personal-website/commit/"
 
   # custom
   customCSS = []
