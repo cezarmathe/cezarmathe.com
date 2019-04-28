@@ -113,13 +113,9 @@ disableHugoGeneratorInject = false
     name       = "Blog"
     url        = "/posts"
   [[menu.main]]
-    identifier = "portfolio"
-    name       = "Portfolio"
-    url        = "/portfolio"
-  [[menu.main]]
-    identifier = "cv"
-    name       = "CV"
-    url        = "/cv.pdf"
+    identifier = "my-work"
+    name       = "My work"
+    url        = "/my-work"
 
 [privacy]
   [privacy.disqus]
