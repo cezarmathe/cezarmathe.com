@@ -48,12 +48,11 @@
 }
 
 #TableOfContents ul {
-    line-height: 35px;
     list-style-type: none;
-    margin: 5% 10%;
+    margin: 5% 10% 10% 5%;
 }
 
 #TableOfContents li {
-    line-height: 35px;
-    margin: 0px 0px;
+    margin: 1px;
+    line-height: 30px;
 }
