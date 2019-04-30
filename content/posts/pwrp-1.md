@@ -39,7 +39,7 @@ I use [Viper](https://github.com/spf13/viper) for handling the configuration fil
 I wanted to have a separate way of logging debug messages(with full caller name, more details etc.) from other logging messages(verbose, info, warn etc.) that does not force you to possess two logger([logrus](https://github.com/sirupsen/logrus)) objects and that can easily transfer logging details(like level and enabling debug messages) to other packages.
 Because of this, I created a _smartlogger_ package that does just that. It wraps around **logrus** logger struct methods and it provides a couple of other useful methods, like reporting that a method has been called or it has returned(using the [runtime](https://godoc.org/runtime) package).
 
-![Logging in action](https://cezarmathe.com/img/2019-04-07-image.png "Logging in action")
+![Logging in action](/img/2019-04-07-image.png "Logging in action")
 
 ### CLI
 
