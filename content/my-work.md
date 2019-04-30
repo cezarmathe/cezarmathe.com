@@ -1,6 +1,5 @@
 +++
 title = "My work"
-toc = true
 +++
 
 ## Curriculum Vitae
