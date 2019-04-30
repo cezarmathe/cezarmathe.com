@@ -4,6 +4,7 @@ date: 2019-04-07
 tags:
   - go
   - cli
+toc: true
 ---
 
 I really enjoy programming, so I write code quite often. Which means that my `Portfolio` section gets outdated quite quick.
@@ -12,7 +13,7 @@ That's why I thought about creating a utility that automates the process of **re
 
 I decided to write this utility in **Go** because I love this programming language and it would be a very good opportunity for me to learn more about it.
 
-# My plan for this utility
+## My plan for this utility
 
 The utility should:
 
@@ -23,32 +24,32 @@ The utility should:
 
 I've been working on the project for almost a month now, but I didn't rush into the features until I had a solid code structure that I can then easily use to expand the project. This includes working with configuration easily, easy logging management between different packages and a proper CLI structure.
 
-# The configuration
+## The configuration
 
 I chose the [toml](https://github.com/toml-lang/toml) as I find it really straightforward to use from a user's perspective(and I also like it more than other data file formats)
 
-# What I have acomplished so far
+## What I have acomplished so far
 
-## Configuration
+### Configuration
 
 I use [Viper](https://github.com/spf13/viper) for handling the configuration file finding, opening and reading process; it also provides useful features like binding command line flags and environment variables to certain keys. If you'd like to see an example configuration file, you can find one [here](https://github.com/cezarmathe/pwrp/blob/master/pwrp.toml).
 
-## Logging
+### Logging
 
 I wanted to have a separate way of logging debug messages(with full caller name, more details etc.) from other logging messages(verbose, info, warn etc.) that does not force you to possess two logger([logrus](https://github.com/sirupsen/logrus)) objects and that can easily transfer logging details(like level and enabling debug messages) to other packages.
 Because of this, I created a _smartlogger_ package that does just that. It wraps around **logrus** logger struct methods and it provides a couple of other useful methods, like reporting that a method has been called or it has returned(using the [runtime](https://godoc.org/runtime) package).
 
 ![Logging in action](https://cezarmathe.com/img/2019-04-07-image.png "Logging in action")
 
-## CLI
+### CLI
 
 For the Command Line interface, I used [cobra](https://github.com/spf13/cobra) to simplify using subcommands and flags.
 
-## Configuration validation
+### Configuration validation
 
 The utility has a built in configuration validation system that checks the configuration each time it runs. You can also export a configuration file and validate it separately, which overwrites the previous file with the new changes(like adding protocols to URL's).
 
-## Recording process
+### Recording process
 
 At the moment, the recording process loads the repositories listed in the configuration. Loading means:
 

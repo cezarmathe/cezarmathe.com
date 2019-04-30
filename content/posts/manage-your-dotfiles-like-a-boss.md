@@ -8,6 +8,7 @@ tags:
   - configuration
   - tutorial
   - stow
+toc: true
 ---
 
 First, a little bit of background. You set up a new computer and chances are you haven't backed up your dotfiles. What do you do now? You spend hours trying to replicate the workflow and configurations, because _someone_ didn't take the time to back up his dotfiles. But hey, at least you're trying now.
