@@ -15,7 +15,7 @@ cd public || exit 1
 git add -A
 
 # Commit changes
-commit_message="Rebuilding site: $(date -u +"%Y-%m-%dT%H:%M:%SZ")\n"
+commit_message="Rebuilding site: $(date -u +"%Y-%m-%dT%H:%M:%SZ")"
 if [ $# -eq 1 ]; then
     commit_message="$1"
 fi
