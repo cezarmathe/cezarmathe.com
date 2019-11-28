@@ -1,8 +1,9 @@
-language: go
 sudo: true
 
 install:
-  - go install github.com/gohugoio/hugo
+  - curl -fSsl https://github.com/gohugoio/hugo/releases/download/v0.60.0/hugo_0.60.0_Linux-64bit.deb -o hugo.deb
+  - sudo apt install ./hugo.deb
+  - rm -rf hugo.deb
 
 jobs:
   include:
