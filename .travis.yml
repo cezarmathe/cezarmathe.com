@@ -2,7 +2,7 @@ language: minimal
 sudo: true
 
 install:
-  - curl -fSsl https://github.com/gohugoio/hugo/releases/download/v0.60.0/hugo_0.60.0_Linux-64bit.tar.gz -o hugo.tar.gz
+  - curl -fSsL https://github.com/gohugoio/hugo/releases/download/v0.60.0/hugo_0.60.0_Linux-64bit.tar.gz -o hugo.tar.gz
   - tar -xzf hugo.tar.gz -C hugo-bin
   - cp ./hugo-bin/hugo ./hugo
   - rm -rf ./hugo-bin
