@@ -1,8 +1,8 @@
+language: go
 sudo: true
 
 install:
-  - sudo apt-get update
-  - sudo apt-get install hugo
+  - go install github.com/gohugoio/hugo
 
 jobs:
   include:
