@@ -1,0 +1,10 @@
+sudo: true
+
+install:
+  - sudo apt-get install hugo
+
+jobs:
+  include:
+    - stage: build the website
+      if: branch = master AND type = push
+      script: ./deploy.sh
