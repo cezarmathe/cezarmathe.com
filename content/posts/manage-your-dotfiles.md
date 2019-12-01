@@ -1,5 +1,5 @@
 ---
-title: How to manage your dotfiles like a boss
+title: How to manage your dotfiles
 date: 2019-01-09
 tags:
   - dotfiles

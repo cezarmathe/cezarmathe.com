@@ -1,6 +1,6 @@
 # general
 baseURL = "https://cezarmathe.com"
-title = "Cezar Mathe"
+title = "Armand-Cezar Mathe"
 
 DefaultContentLanguage = "en"
 
@@ -39,7 +39,7 @@ disableHugoGeneratorInject = false
   posts = "/posts/:year-:month-:day-:title"
 
 [author]
-  name = "Cezar Mathe"
+  name = "Armand-Cezar Mathe"
 
 [blackfriday]
   hrefTargetBlank = true
@@ -55,12 +55,12 @@ disableHugoGeneratorInject = false
   dateformNumTime = "15:04 -0700 02-01-2006"
 
   # Document head
-  description = "A blog and a website that connects my online presence." 
+  description = "My online presence"
   keywords = "homepage, blog, development, programming, personal, portfolio, online-presence"
   images = [""]
 
   # Subtitle on the homepage
-  homeSubtitle = "Student"
+  homeSubtitle = "Student, freelancer"
 
   # URL prefix for commits
   gitUrl = "https://github.com/cezarmathe/personal-website/commit/"
@@ -76,7 +76,7 @@ disableHugoGeneratorInject = false
   defaultTheme = "dark"
 
   [params.logo]
-    logoText     = "$ cd ${HOME}"
+    logoText     = "Home"
     logoHomeLink = "/"
 
   # Social icons
@@ -95,12 +95,12 @@ disableHugoGeneratorInject = false
 # language stuff
 [languages]
   [languages.en]
-    subtitle = "A blog and a website that connects my online presence."
+    subtitle = "My online presence"
     weight = 1
     copyright = '<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>'
 
     [languages.en.params.logo]
-      logoText = "$ cd ${HOME}"
+      logoText = "Home"
       logoHomeLink = "/"
 
 [menu]
@@ -109,13 +109,17 @@ disableHugoGeneratorInject = false
     name       = "About"
     url        = "/about"
   [[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
-    url        = "/posts"
+    identifier = "contact"
+    name       = "Contact me"
+    url        = "/contact"
   [[menu.main]]
-    identifier = "my-work"
-    name       = "My work"
-    url        = "/my-work"
+    identifier = "portfolio"
+    name       = "Portfolio"
+    url        = "/portfolio"
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "/posts"
 
 [privacy]
   [privacy.disqus]
