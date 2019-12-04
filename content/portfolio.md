@@ -1,5 +1,5 @@
 +++
-title = "My work"
+title = "Portfolio"
 +++
 
 ## Curriculum Vitae

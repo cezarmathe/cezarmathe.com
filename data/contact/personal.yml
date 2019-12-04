@@ -1,0 +1,10 @@
+---
+description: A list of email addresses related to me.
+list:
+  - Name: Personal email
+    description:
+    value: me@cezarmathe.com
+  - Name: Gmail
+    description:
+    value: cezarmathe@gmail.com
+# TODO: add a lot of personal stuff

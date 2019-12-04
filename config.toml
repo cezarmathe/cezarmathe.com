@@ -110,7 +110,7 @@ disableHugoGeneratorInject = false
     url        = "/about"
   [[menu.main]]
     identifier = "contact"
-    name       = "Contact me"
+    name       = "Contact"
     url        = "/contact"
   [[menu.main]]
     identifier = "portfolio"
