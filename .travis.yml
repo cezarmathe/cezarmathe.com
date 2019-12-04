@@ -8,6 +8,9 @@ install:
 
 jobs:
   include:
-    - stage: build the website
+    - stage: deploy the website
       if: branch = master AND type = push
       script: ./deploy.sh
+    - stage: build the website
+      if: branch != master AND type = push
+      script: hugo
