@@ -4,16 +4,16 @@ title = "Contact me"
 
 ## Personal details
 
-{{% contactList "personal" %}}
+{{< contacts "personal" >}}
 
 ## Freelancer profiles
 
-{{% contactList "freelance" %}}
+{{< contacts "freelance" >}}
 
 ## Online profiles
 
-{{% contactList "online-profiles" %}}
+{{< contacts "online-profiles" >}}
 
 ## Other accounts related to me
 
-{{% contactList "others" %}}
+{{< contacts "others" >}}
