@@ -8,4 +8,4 @@ If you'd like to see a plain old CV, then you can download mine [here](/cv.pdf)(
 
 ## Open source projects
 
-{{% workList %}}
+{{< portfolio >}}
