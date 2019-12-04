@@ -1,0 +1,33 @@
+{{ $list_name := .Get 0 }}
+
+{{ if eq $list_name "personal" }}
+
+{{ partial "contact_links.html" .Site.Data.contact.personal }}
+
+{{ else }}
+
+{{ if eq $list_name "freelance" }}
+
+{{ partial "contact_links.html" .Site.Data.contact.freelancing }}
+
+{{ else }}
+
+{{ if eq $list_name "online-profiles" }}
+
+{{ partial "contact_links.html" .Site.Data.contact.profiles }}
+
+{{ else }}
+
+{{ if eq $list_name "others" }}
+
+{{ partial "contact_links.html" .Site.Data.contact.others }}
+
+{{ end }}
+
+{{ end }}
+
+{{ end }}
+
+{{ end }}
+
+<br />
