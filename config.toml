@@ -86,11 +86,15 @@ disableHugoGeneratorInject = false
 
   [[params.social]]
     name = "github"
-    url  = "http://bit.ly/2J17YqZ"
+    url  = "https://github.com/cezarmathe"
 
   [[params.social]]
     name = "linkedin"
-    url  = "http://bit.ly/2L4YX2z"
+    url  = "https://www.linkedin.com/in/cezarmathe/"
+
+  [[params.social]]
+    name = "keybase"
+    url  = "https://keybase.io/cezarmathe"
 
 # language stuff
 [languages]
