@@ -1,19 +1,11 @@
 +++
-title = "Connect with me"
+title = "Let's get in touch!"
 +++
 
-## Personal details
+The best way to reach out to me is through email, as I do not check my online accounts 24/7. Therefore:
 
-{{< contacts "personal" >}}
+- for personal matters(I repeat, personal matters only), shoot me an email at [me@cezarmathe.com](mailto:me@cezarmathe.com)
 
-## Freelancer profiles
+- regarding my work and professional services, I am available at [work@cezarmathe.com](mailto:work@cezarmathe.com)
 
-{{< contacts "freelance" >}}
 
-## Online profiles
-
-{{< contacts "online-profiles" >}}
-
-## Other accounts related to me
-
-{{< contacts "others" >}}
