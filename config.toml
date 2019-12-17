@@ -35,18 +35,11 @@ disableSitemap = false
 disable404     = false
 disableHugoGeneratorInject = false
 
-[permalinks]
-  posts = "/posts/:year-:month-:day-:title"
-
 [author]
   name = "Armand-Cezar Mathe"
 
 [blackfriday]
   hrefTargetBlank = true
-
-# [taxonomies]
-#   tag      = "tags"
-#   category = ""
 
 [params]
   dateform        = "2 Jan 2006"
@@ -55,12 +48,12 @@ disableHugoGeneratorInject = false
   dateformNumTime = "15:04 -0700 02-01-2006"
 
   # Document head
-  description = "My online presence"
-  keywords = "homepage, blog, development, programming, personal, portfolio, online-presence"
+  description = "I'm passionate"
+  keywords = "website, personal website, cezar, mathe, armand, cezar mathe, armand cezar mathe, armand-cezar mathe"
   images = [""]
 
   # Subtitle on the homepage
-  homeSubtitle = "Student, freelancer"
+  homeSubtitle = "a"
 
   # URL prefix for commits
   gitUrl = "https://github.com/cezarmathe/personal-website/commit/"
@@ -71,8 +64,6 @@ disableHugoGeneratorInject = false
 
   justifyContent = false
 
-  contentTypeName = "posts"
-
   defaultTheme = "dark"
 
   [params.logo]
@@ -82,24 +73,16 @@ disableHugoGeneratorInject = false
   # Social icons
   [[params.social]]
     name = "email"
-    url  = "mailto:cezarmathe@gmail.com"
+    url  = "mailto:me@cezarmathe.com"
 
   [[params.social]]
     name = "github"
     url  = "https://github.com/cezarmathe"
 
-  [[params.social]]
-    name = "linkedin"
-    url  = "https://www.linkedin.com/in/cezarmathe/"
-
-  [[params.social]]
-    name = "keybase"
-    url  = "https://keybase.io/cezarmathe"
-
 # language stuff
 [languages]
   [languages.en]
-    subtitle = "My online presence"
+    subtitle = "A website about myself"
     weight = 1
     copyright = '<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>'
 
@@ -116,14 +99,6 @@ disableHugoGeneratorInject = false
     identifier = "contact"
     name       = "Contact"
     url        = "/contact"
-  [[menu.main]]
-    identifier = "portfolio"
-    name       = "Portfolio"
-    url        = "/portfolio"
-  [[menu.main]]
-    identifier = "posts"
-    name       = "Posts"
-    url        = "/posts"
 
 [privacy]
   [privacy.disqus]
