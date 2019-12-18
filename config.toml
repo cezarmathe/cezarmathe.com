@@ -1,140 +1,63 @@
-# general
-baseURL = "https://cezarmathe.com"
-title = "Armand-Cezar Mathe"
+## Basic Configuration
 
-DefaultContentLanguage = "en"
+baseurl = "https://cezarmathe.com"
+builddrafts = false
+canonifyurls = false
+languageCode = "en-US"
 
-theme = "hello-friend-ng"
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
 
+author = "Cezar Mathe"
+title = "Cezar Mathe"
+
+theme = "hugo-goa"
+
+## Hugo Built-in Features
+# disqusShortname = "https-shenoybr-github-io-hugo-goa-demo" # Comment out to disable Disqus.
 googleAnalytics = "UA-131673959-1"
-
-PygmentsCodefences = true
-PygmentsUseClasses = true
-PygmentsStyle = "monokai"
-
-# rssLimit  = 10
-copyright = "This work is licensed under a Attribution-NonCommercial-ShareAlike 4.0 International License."
-
-archetypeDir = "archetypes"
-contentDir   = "content"
-dataDir      = "data"
-layoutDir    = "layouts"
-publishDir   = "public"
-
-buildDrafts  = false
-buildFuture  = false
-buildExpored = false
-canonifyURLs = true
-
 enableRobotsTXT = true
-enableGitInfo   = true
-enableEmoji     = true
-enableMissingTranslationPlaceholders = false
-disableRSS     = false
-disableSitemap = false
-disable404     = false
-disableHugoGeneratorInject = false
 
-[permalinks]
-  posts = "/posts/:year-:month-:day-:title"
-
-[author]
-  name = "Armand-Cezar Mathe"
-
-[blackfriday]
-  hrefTargetBlank = true
-
-# [taxonomies]
-#   tag      = "tags"
-#   category = ""
-
+## Site Settings
 [params]
-  dateform        = "2 Jan 2006"
-  dateformShort   = "2 Jan"
-  dateformNum     = "02-01-2006"
-  dateformNumTime = "15:04 -0700 02-01-2006"
+author = "Cezar Mathe"
+intro = "Passionate workaholic"
+description = ""
+authorimage = "author-image.jpg"
+dateformat = "Jan 2, 2006"
 
-  # Document head
-  description = "My online presence"
-  keywords = "homepage, blog, development, programming, personal, portfolio, online-presence"
-  images = [""]
+## Site Meta Settings
+[params.meta]
+description = "A website about Cezar Mathe"
+keywords = "personal, personal website"
 
-  # Subtitle on the homepage
-  homeSubtitle = "Student, freelancer"
+## Social Accounts
+[params.social]
+github = "cezarmathe"
+# linkedin = "cezarmathe"
+# twitter = "cezarmathe"
+# stackoverflow = "9836895/cezar-mathe"
+# gitlab = "cezarmathe"
+# bitbucket = "cezarmathe"
+# patreon = "cezarmathe"
+keybase = "cezarmathe"
+# skype = "live:cezarmathe_2"
+email = "me@cezarmathe.com"
+pgp = "F7A4665006757D40230D"
 
-  # URL prefix for commits
-  gitUrl = "https://github.com/cezarmathe/personal-website/commit/"
+## Extras
+[params.extra]
+copyright = "© 2019. Armand-Cezar Mathe. [Some rights reserved](https://creativecommons.org/licenses/by-nc-sa/4.0/)."
+poweredby = true
+highlightjs = true
+socialmarkup = true
+toc = true
+displayrssicon = true
 
-  # custom
-  customCSS = ["/index-sidebar.css"]
-  customJS  = []
-
-  justifyContent = false
-
-  contentTypeName = "posts"
-
-  defaultTheme = "dark"
-
-  [params.logo]
-    logoText     = "Home"
-    logoHomeLink = "/"
-
-  # Social icons
-  [[params.social]]
-    name = "email"
-    url  = "mailto:cezarmathe@gmail.com"
-
-  [[params.social]]
-    name = "github"
-    url  = "http://bit.ly/2J17YqZ"
-
-  [[params.social]]
-    name = "linkedin"
-    url  = "http://bit.ly/2L4YX2z"
-
-# language stuff
-[languages]
-  [languages.en]
-    subtitle = "My online presence"
-    weight = 1
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>'
-
-    [languages.en.params.logo]
-      logoText = "Home"
-      logoHomeLink = "/"
-
-[menu]
-  [[menu.main]]
+## Main Menu
+[[menu.main]]
+    name = "about"
     identifier = "about"
-    name       = "About"
-    url        = "/about"
-  [[menu.main]]
-    identifier = "contact"
-    name       = "Contact me"
-    url        = "/contact"
-  [[menu.main]]
-    identifier = "portfolio"
-    name       = "Portfolio"
-    url        = "/portfolio"
-  [[menu.main]]
-    identifier = "posts"
-    name       = "Posts"
-    url        = "/posts"
-
-[privacy]
-  [privacy.disqus]
-    disable = true
-  [privacy.googleAnalytics]
-    anonymizeIP = true
-    disable = false
-    respectDoNotTrack = true
-    useSessionStorage = false
-  [privacy.instagram]
-    disable = true
-  [privacy.twitter]
-    disable = true
-  [privacy.vimeo]
-    disable = true
-  [privacy.youtube]
-    disable = false
-    privacyEnhanced = true
+    weight = 200
+    url = "/about/"
