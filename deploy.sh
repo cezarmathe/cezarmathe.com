@@ -6,7 +6,7 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 git clone "https://cezarmathe:${GITHUB_TOKEN}@github.com/cezarmathe/cezarmathe.github.io.git" public 1> /dev/null 2>&1
 
 # Build the website
-hugo -t hugo-goa --minify || exit 1
+hugo --minify || exit 1
 
 # Cd into the build folder
 cd public || exit 1
