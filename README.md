@@ -25,7 +25,7 @@ This is the repository where I hold the source for my static personal website, h
 
 ## Theme
 
-The theme I used is [hugo-goa](https://themes.gohugo.io/hugo-goa/). A copy of this theme's license can be found [here](https://github.com/shenoybr/hugo-goa/blob/master/LICENSE.md).
+The theme I used is [hugo-goa](https://themes.gohugo.io/hugo-goa/). A copy of this theme's license can be found [here](https://github.com/shenoybr/hugo-goa/blob/master/LICENSE).
 
 ## Licensing
 
