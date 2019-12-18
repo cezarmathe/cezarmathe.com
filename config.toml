@@ -22,8 +22,8 @@ enableRobotsTXT = true
 ## Site Settings
 [params]
 author = "Cezar Mathe"
-intro = "Passionate workaholic"
-description = ""
+intro = "Student, occasionally freelancer"
+description = "I really like software, making plans and acting on them."
 authorimage = "author-image.jpg"
 dateformat = "Jan 2, 2006"
 
@@ -35,7 +35,7 @@ keywords = "personal, personal website"
 ## Social Accounts
 [params.social]
 github = "cezarmathe"
-# linkedin = "cezarmathe"
+linkedin = "cezarmathe"
 # twitter = "cezarmathe"
 # stackoverflow = "9836895/cezar-mathe"
 # gitlab = "cezarmathe"
@@ -48,7 +48,7 @@ pgp = "F7A4665006757D40230D"
 
 ## Extras
 [params.extra]
-copyright = "© 2019. Armand-Cezar Mathe. [Some rights reserved](https://creativecommons.org/licenses/by-nc-sa/4.0/)."
+copyright = "© 2019. Armand-Cezar Mathe. [Some rights reserved](https://creativecommons.org/licenses/by-nc-sa/4.0/). [Penguin photo](https://unsplash.com/photos/vAh74YVrcEE) by [Yeliz Atici](https://unsplash.com/@yelijoe) on [Unsplash](https://unsplash.com)"
 poweredby = true
 highlightjs = true
 socialmarkup = true
