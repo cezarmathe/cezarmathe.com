@@ -1,69 +1,46 @@
-## Basic Configuration
-
-baseurl = "https://cezarmathe.com"
-builddrafts = false
+# Basic configuration
+baseurl      = "https://cezarmathe.com"
+builddrafts  = false
 canonifyurls = false
 languageCode = "en-US"
 
 contentdir = "content"
-layoutdir = "layouts"
+layoutdir  = "layouts"
 publishdir = "public"
 
-author = "Cezar Mathe"
-title = "Cezar Mathe"
+author = "Armand Cezar Mathe"
+title  = "Armand Cezar Mathe"
 
 theme = "hugo-goa"
 
-## Hugo Built-in Features
-# disqusShortname = "https-shenoybr-github-io-hugo-goa-demo" # Comment out to disable Disqus.
-googleAnalytics = "UA-131673959-1"
 enableRobotsTXT = true
 
-## Site Settings
+# Site Settings
 [params]
-author = "Cezar Mathe"
-intro = "Student, occasionally freelancer"
-description = "I really like software, making plans and acting on them."
+author      = "Armand Cezar Mathe"
+intro       = "I rwx code."
 authorimage = "author-image.jpg"
-dateformat = "Jan 2, 2006"
+dateformat  = "Jan 2, 2006"
 
-## Site Meta Settings
+# Site meta Settings
 [params.meta]
-description = "A website about Cezar Mathe"
-keywords = "personal, personal website"
+description = "Armand Cezar Mathe's personal website"
+keywords    = "armand, cezar, mathe, armand cezar, armand mathe, cezar mathe, armand cezar mathe, website, personal, personal website"
 
-## Social Accounts
+# Links
 [params.social]
 github = "cezarmathe"
-linkedin = "cezarmathe"
-# twitter = "cezarmathe"
-# stackoverflow = "9836895/cezar-mathe"
-# gitlab = "cezarmathe"
-# bitbucket = "cezarmathe"
-# patreon = "cezarmathe"
-keybase = "cezarmathe"
-# skype = "live:cezarmathe_2"
-email = "me@cezarmathe.com"
-pgp = "F7A4665006757D40230D"
+email  = "me@cezarmathe.com"
+pgp    = "F7A4665006757D40230D"
 
-## Extras
+# Extras
 [params.extra]
-copyright = "© 2019. Armand-Cezar Mathe. [Some rights reserved](https://creativecommons.org/licenses/by-nc-sa/4.0/). [Penguin photo](https://unsplash.com/photos/vAh74YVrcEE) by [Yeliz Atici](https://unsplash.com/@yelijoe) on [Unsplash](https://unsplash.com)"
-poweredby = true
-highlightjs = true
-socialmarkup = true
-toc = true
-displayrssicon = true
+copyright      = "© 2020. Armand-Cezar Mathe. [Some rights reserved](https://creativecommons.org/licenses/by-nc-sa/4.0/). [Penguin photo](https://unsplash.com/photos/vAh74YVrcEE) by [Yeliz Atici](https://unsplash.com/@yelijoe) on [Unsplash](https://unsplash.com)"
+poweredby      = true
+highlightjs    = true
+socialmarkup   = true
+toc            = true
+displayrssicon = false
 
-## Main Menu
+# Main menu
 [[menu.main]]
-    name = "about"
-    identifier = "about"
-    weight = 100
-    url = "/about/"
-
-[[menu.main]]
-    name = "software"
-    identifier = "software"
-    weight = 200
-    url = "/software/"
