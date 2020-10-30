@@ -19,6 +19,7 @@ enableRobotsTXT = true
 [params]
 author      = "Armand Cezar Mathe"
 intro       = "I rwx code."
+description = "I also obsess over optimizing my performance through time management, planning ahead, smart execution and a conscious lifestyle."
 authorimage = "author-image.jpg"
 dateformat  = "Jan 2, 2006"
 
@@ -35,7 +36,7 @@ pgp    = "F7A4665006757D40230D"
 
 # Extras
 [params.extra]
-copyright      = "© 2020. Armand-Cezar Mathe. [Some rights reserved](https://creativecommons.org/licenses/by-nc-sa/4.0/). [Penguin photo](https://unsplash.com/photos/vAh74YVrcEE) by [Yeliz Atici](https://unsplash.com/@yelijoe) on [Unsplash](https://unsplash.com)"
+copyright      = "© 2020. Armand-Cezar Mathe. [Some rights reserved](https://creativecommons.org/licenses/by-nc-sa/4.0/)."
 poweredby      = true
 highlightjs    = true
 socialmarkup   = true
