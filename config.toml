@@ -3,3 +3,4 @@
 baseURL      = "https://cezarmathe.com/"
 languageCode = "en-us"
 title        = "Cezar's website"
+theme        = "tvcxwebtheme"
