@@ -1,47 +1,5 @@
-# Basic configuration
-baseurl      = "https://cezarmathe.com"
-builddrafts  = false
-canonifyurls = false
-languageCode = "en-US"
+# config.toml
 
-contentdir = "content"
-layoutdir  = "layouts"
-publishdir = "public"
-
-author = "Armand Cezar Mathe"
-title  = "Armand Cezar Mathe"
-
-theme = "hugo-goa"
-
-enableRobotsTXT = true
-
-# Site Settings
-[params]
-author      = "Armand Cezar Mathe"
-intro       = "I rwx code."
-description = "I also obsess over optimizing my performance through time management, planning ahead, smart execution and a conscious lifestyle."
-authorimage = "author-image.jpg"
-dateformat  = "Jan 2, 2006"
-
-# Site meta Settings
-[params.meta]
-description = "Armand Cezar Mathe's personal website"
-keywords    = "armand, cezar, mathe, armand cezar, armand mathe, cezar mathe, armand cezar mathe, website, personal, personal website"
-
-# Links
-[params.social]
-github = "cezarmathe"
-email  = "me@cezarmathe.com"
-pgp    = "F7A4665006757D40230D"
-
-# Extras
-[params.extra]
-copyright      = "© 2020. Armand-Cezar Mathe. [Some rights reserved](https://creativecommons.org/licenses/by-nc-sa/4.0/)."
-poweredby      = true
-highlightjs    = true
-socialmarkup   = true
-toc            = true
-displayrssicon = false
-
-# Main menu
-[[menu.main]]
+baseURL      = "https://cezarmathe.com/"
+languageCode = "en-us"
+title        = "Cezar's website"

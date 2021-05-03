@@ -1,8 +1,0 @@
-{{- $url := .Get 0 -}}
-{{- $placeholder := .Get 1 -}}
-
-{{- with .Parent -}}
-<a href="{{ $url }}" target="_blank" rel="noopener">{{ $placeholder }}</a>
-{{- else -}}
-<a href="{{ $url }}" target="_blank" rel="noopener">{{ $placeholder }}</a>
-{{- end -}}
