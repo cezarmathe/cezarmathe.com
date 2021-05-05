@@ -1,0 +1,38 @@
+name: Build and publish website
+
+on:
+  push:
+    branches: [ master ]
+
+env:
+  REPO: ssh://git@github.com/cezarmathe/cezarmathe.github.io.git
+  MAIN_BRANCH: master
+  GIT_USER_EMAIL: me@cezarmathe.com
+  GIT_USER_NAME: cezarmathe
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Install hugo
+      run: sudo apt update && sudo apt install hugo
+
+    - name: Configure deploy key
+      env:
+        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+      run: |
+        mkdir -p ~/.ssh
+        echo "${DEPLOY_KEY}" | tee ~/.ssh/id_ed25519 > /dev/null
+        chmod 600 ~/.ssh/id_ed25519
+
+    - name: Initialize, build and publish
+      env:
+        GIT_SSH_COMMAND: ssh -i ~/.ssh/id_ed25519
+      run: |
+        make init
+        make build
+        make publish
