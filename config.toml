@@ -2,5 +2,39 @@
 
 baseURL      = "https://cezarmathe.com/"
 languageCode = "en-us"
-title        = "Cezar's website"
-theme        = "tvcxwebtheme"
+
+author = "Armand-Cezar Mathe"
+title  = "Cezar's website"
+
+enableRobotsTXT = true
+
+[params]
+author               = "Armand-Cezar Mathe"
+avatar               = "/avatar.img"
+firstPublicationDate = "2019"
+
+[params.content]
+license_url      = "https://creativecommons.org/licenses/by-sa/4.0/"
+license_display  = "CC-BY-SA"
+license_copy_url = "/content-license.txt"
+
+[params.source]
+license_url      = "https://choosealicense.com/licenses/mit/"
+license_display  = "MIT"
+license_copy_url = "/license.txt"
+url              = "https://github.com/cezarmathe/personal-website"
+
+[[params.links]]
+name    = "email"
+display = "me@cezarmathe.com"
+link    = "mailto:me@cezarmathe.com"
+
+[[params.links]]
+name    = "gpg"
+display = "0x5C6E240A90B96553"
+link    = "/0x5C6E240A90B96553.txt"
+
+[[params.links]]
+name    = "github"
+display = "cezarmathe"
+link    = "https://github.com/cezarmathe"

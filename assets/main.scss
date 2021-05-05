@@ -1,8 +1,6 @@
-$black: #000000;
-
 html {
   font-family: sans-serif;
-  color: $black;
+  color: black;
 }
 
 body {
@@ -15,20 +13,29 @@ header {
   margin-top: 2rem;
   text-align: left;
   font-size: 1.5rem;
+  display: flex;
 }
 
 main {
   margin-top: 2rem;
-  text-align: center;
+  text-align: left;
   font-size: 1rem;
 }
 
 footer {
   margin-top: 2rem;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 #header-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
+}
+
+.header-social-link {
+  font-size: 1rem;
+}
+
+#header-text {
+  flex: 75%;
 }

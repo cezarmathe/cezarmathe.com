@@ -1,0 +1,15 @@
+<header>
+    <div id="header-text">
+        <div id="header-title">{{ .Site.Title }}</div>
+
+        {{ range .Site.Params.links }}
+        <div class="header-social-link">
+            <b>{{ .name }}</b>
+            <a class="header-social-link" href="{{ .link }}">{{ .display }}</a>
+        </div>
+        {{ end }}
+    </div>
+    <div id="header-image">
+        <img src="/avatar.jpg" width="128" height="128"/>
+    </div>
+</header>

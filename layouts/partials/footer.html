@@ -1,0 +1,28 @@
+<footer>
+    <div id="footer-copyright">
+        <p class="footer-paragraph">
+            Copyright ©
+            {{ .Site.Params.firstPublicationDate }} – {{ now.Format "2006"}}.
+            {{ .Site.Params.author }}.
+            Some rights reserved.
+        </p>
+        <p class="footer-paragraph">
+            The content of this website is available under
+            <a href="{{ .Site.Params.content.license_url }}">{{ .Site.Params.content.license_display }}</a>.
+            You can view a copy of the license
+            <a href="{{ .Site.Params.content.license_copy_url }}">here</a>.
+        </p>
+        <p class="footer-paragraph">
+            <a href="{{ .Site.Params.source.url }}">The source code of this website</a>
+            is available under
+            <a href="{{ .Site.Params.source.license_url }}">{{ .Site.Params.source.license_display }}</a>.
+            You can view a copy of the license
+            <a href="{{ .Site.Params.source.license_copy_url }}">here</a>.
+        </p>
+    </div>
+    <div id="footer-hugo">
+        <p class="footer-paragraph">
+            Built with <a href="https://gohugo.io/">Hugo</a> {{ hugo.Version }}.
+        </p>
+    </div>
+</footer>
