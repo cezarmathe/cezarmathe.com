@@ -38,3 +38,8 @@ link    = "/0x5C6E240A90B96553.txt"
 name    = "github"
 display = "cezarmathe"
 link    = "https://github.com/cezarmathe"
+
+[[params.links]]
+name    = "mastodon"
+display = "@tvcx@mastodon.social"
+link    = "https://mastodon.social/@tvcx"
