@@ -9,14 +9,6 @@ API_ENDPOINT="https://api.github.com/repos/${REPOSITORY}/releases/latest"
 # endpoint for getting the artifacts for hugo
 DOWNLOAD_ENDPOINT="https://github.com/${REPOSITORY}/releases/download"
 
-wget "${DOWNLOAD_ENDPOINT}/v${LATEST_VERSION}/hugo_${LATEST_VERSION}_checksums.txt"
-wget "${DOWNLOAD_ENDPOINT}/v${LATEST_VERSION}/hugo_extended_${LATEST_VERSION}_Linux-64bit.deb"
-
-sha256sum --check "hugo_${LATEST_VERSION}_checksums.txt" --ignore-missing
-
-sudo apt install "hugo_extended_${latest_version}_Linux-64bit.deb"
-rm -rf "hugo_extended_${latest_version}_Linux-64bit.deb"
-
 function main() {
     sudo apt update
     sudo apt install curl jq wget
