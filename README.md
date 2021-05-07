@@ -1,4 +1,4 @@
-# personal-website
+# cezarmathe.com
 
 Source for [my personal website].
 
