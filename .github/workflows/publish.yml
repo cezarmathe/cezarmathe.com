@@ -18,8 +18,9 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Install hugo
-      run: sudo apt update && sudo apt install hugo
+    - name: Install latest hugo release
+      run: ./scripts/install_hugo_latest.sh
+
 
     - name: Configure deploy key
       env:
