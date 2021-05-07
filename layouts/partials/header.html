@@ -4,12 +4,13 @@
 
         {{ range .Site.Params.links }}
         <div class="header-social-link">
-            <b>{{ .name }}</b>
+            <b>{{ .name }} &nbsp;</b>
+            <br class="header-social-link-breaker" />
             <a class="header-social-link" href="{{ .link }}">{{ .display }}</a>
         </div>
         {{ end }}
     </div>
-    <div id="header-image">
-        <img src="/avatar.jpg" width="128" height="128"/>
+    <div>
+        <img id="header-image" src="/avatar.jpg" width="128" height="128"/>
     </div>
 </header>

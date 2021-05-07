@@ -39,3 +39,15 @@ footer {
 #header-text {
   flex: 75%;
 }
+
+.header-social-link-breaker {
+  @media (min-width:480px){
+    display: none;
+  }
+}
+
+#header-image {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
