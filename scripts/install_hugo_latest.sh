@@ -10,9 +10,6 @@ API_ENDPOINT="https://api.github.com/repos/${REPOSITORY}/releases/latest"
 DOWNLOAD_ENDPOINT="https://github.com/${REPOSITORY}/releases/download"
 
 function main() {
-    sudo apt update
-    sudo apt install curl jq wget
-
     local version="$(curl -fsSL ${API_ENDPOINT} \
         | jq -r .tag_name \
         | tr -d 'v')"
@@ -25,7 +22,7 @@ function main() {
 
     sha256sum --check "${hugo_shasums}" --ignore-missing
 
-    sudo apt install "${hugo_deb}"
+    sudo dpkg -i "${hugo_deb}"
 
     rm "${hugo_shasums}" "${hugo_deb}"
 }
