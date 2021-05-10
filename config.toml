@@ -50,8 +50,4 @@ rel     = "me"
 attrs   = ['rel="me"']
 
 [params.mastofeed]
-user_url = "https://mastodon.social/@tvcx"
-theme    = "auto"
-header   = true
-replies  = false
-boosts   = false
+url = "https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.social%2F%40tvcx&theme=auto&header=true&replies=false&boosts=false"

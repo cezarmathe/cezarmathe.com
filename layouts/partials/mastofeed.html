@@ -1,15 +1,11 @@
 {{ with .Site.Params.mastofeed }}
 
-{{ $userUrl := htmlEscape .user_url }}
-
-{{ $src := "https://www.mastofeed.com/apiv2/feed?userurl={{ $userUrl }}&theme={{ .theme }}&size=100&header={{ .header }}&replies={{ .replies }}&boosts={{ .boosts }}" }}
-
 <div id="main-mastodon-feed-container">
     <iframe
         id="main-mastodon-feed"
         allowfullscreen
         sandbox="allow-top-navigation allow-scripts"
-        src="{{ $src }}">
+        src="{{ .url }}">
     </iframe>
 </div>
 
