@@ -1,5 +1,7 @@
 {{ define "main" }}
 
-<p>Hello, world!</p>
+{{ if .Site.Params.mastofeed }}
+{{- partial "mastofeed.html" . -}}
+{{ end }}
 
 {{ end }}

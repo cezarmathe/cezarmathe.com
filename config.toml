@@ -48,3 +48,10 @@ display = "@tvcx@mastodon.social"
 link    = "https://mastodon.social/@tvcx"
 rel     = "me"
 attrs   = ['rel="me"']
+
+[params.mastofeed]
+user_url = "https://mastodon.social/@tvcx"
+theme    = "auto"
+header   = true
+replies  = false
+boosts   = false
