@@ -6,7 +6,12 @@
         <div class="header-social-link">
             <b>{{ .name }} &nbsp;</b>
             <br class="header-social-link-breaker" />
-            <a class="header-social-link" href="{{ .link }}">{{ .display }}</a>
+            <a
+                {{ if .rel }} rel="{{ .rel }}" {{ end }}
+                class="header-social-link"
+                href="{{ .link }}">
+                    {{ .display }}
+            </a>
         </div>
         {{ end }}
     </div>
