@@ -33,11 +33,6 @@ display = "me@cezarmathe.com"
 link    = "mailto:me@cezarmathe.com"
 
 [[params.links]]
-name    = "gpg"
-display = "0x5C6E240A90B96553"
-link    = "/0x5C6E240A90B96553.txt"
-
-[[params.links]]
 name    = "github"
 display = "cezarmathe"
 link    = "https://github.com/cezarmathe"
