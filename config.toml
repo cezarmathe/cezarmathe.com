@@ -15,17 +15,7 @@ minifyOutput = true
 author               = "Armand-Cezar Mathe"
 avatar               = "/avatar.img"
 firstPublicationDate = "2019"
-
-[params.content]
-license_url      = "https://creativecommons.org/licenses/by-sa/4.0/"
-license_display  = "CC-BY-SA"
-license_copy_url = "/content-license.txt"
-
-[params.source]
-license_url      = "https://choosealicense.com/licenses/mit/"
-license_display  = "MIT"
-license_copy_url = "/license.txt"
-url              = "https://github.com/cezarmathe/personal-website"
+copyright_url        = "/copyright"
 
 [[params.links]]
 name    = "email"
