@@ -4,8 +4,7 @@
 
         {{ range .Site.Params.links }}
         <div class="header-social-link">
-            <b>{{ .name }} &nbsp;</b>
-            <br class="header-social-link-breaker" />
+            <b>{{ .name }}</b>
             <a
                 {{ if .rel }} rel="{{ .rel }}" {{ end }}
                 class="header-social-link"
