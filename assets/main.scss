@@ -1,12 +1,53 @@
+// main.scss
+
+%page {
+  /* desktops */
+  @media (min-width: 1281px) {
+    width: 960px;
+    height: 500px;
+  }
+
+  /* laptops, desktops */
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    width: 960px;
+    height: 500px;
+  }
+
+  /* tablets */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 640px;
+    height: 500px;
+  }
+
+  /* tablets (landscape) */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    width: 768px;
+    height: 425px;
+  }
+
+  /* tablets (small res), phones (landscape) */
+  @media (min-width: 481px) and (max-width: 767px) {
+    width: 480px;
+    height: 400px;
+  }
+
+  /* phones */
+  @media (min-width: 320px) and (max-width: 480px) {
+    width: 320px;
+    height: 300px;
+  }
+}
+
 html {
   font-family: sans-serif;
   color: black;
 }
 
 body {
-  max-width: 960px;
   margin: 0 auto;
   padding: 1rem;
+
+  @extend %page
 }
 
 header {
@@ -56,33 +97,5 @@ footer {
 }
 
 #main-mastodon-feed {
-  @media (min-width: 1281px) {
-    width: 960px;
-    height: 500px;
-  }
-
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    width: 960px;
-    height: 500px;
-  }
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-    width: 640px;
-    height: 500px;
-  }
-
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    width: 640px;
-    height: 425px;
-  }
-
-  @media (min-width: 481px) and (max-width: 767px) {
-    width: 480px;
-    height: 400px;
-  }
-
-  @media (min-width: 320px) and (max-width: 480px) {
-    width: 325px;
-    height: 300px;
-  }
+  @extend %page
 }
