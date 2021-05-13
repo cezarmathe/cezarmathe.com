@@ -3,15 +3,17 @@
         <div id="header-title">{{ .Site.Title }}</div>
 
         {{ range .Site.Params.links }}
-        <div class="header-social-link">
-            <b>{{ .name }}</b>
-            <a
-                {{ if .rel }} rel="{{ .rel }}" {{ end }}
-                class="header-social-link"
-                href="{{ .link }}">
-                    {{ .display }}
-            </a>
-        </div>
+        <dl class="external-links dl-grid">
+            <dt>{{ .name }}</dt>
+            <dd>
+                <a
+                    {{ if .rel }} rel="{{ .rel }}" {{ end }}
+                    class="external-link"
+                    href="{{ .link }}">
+                        {{ .display }}
+                </a>
+            </dd>
+        </dl>
         {{ end }}
     </div>
     <div>
