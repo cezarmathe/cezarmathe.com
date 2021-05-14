@@ -100,17 +100,15 @@ footer {
   @extend %page
 }
 
-dl.dl-grid {
+dl.external-links {
+  font-size: medium;
+
   display: grid;
   grid-template: auto / 45px 1fr;
 
   dt dd {
     margin: 0;
   }
-}
-
-.external-links {
-  font-size: medium;
 
   dt {
     font-weight: bold;
