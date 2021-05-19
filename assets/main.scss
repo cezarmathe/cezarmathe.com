@@ -87,7 +87,21 @@ footer {
     top: 50%;
     transform: translateY(-50%);
   }
-  @media (max-width:480px){
+
+  /* others  */
+  @media (min-width: 768px) {
+    width: 192px;
+    height: 192px;
+  }
+
+  /* tablets (small res), phones (landscape) */
+  @media (min-width: 481px) and (max-width: 767px) {
+    width: 160px;
+    height: 160px;
+  }
+
+  /* phones */
+  @media (min-width: 320px) and (max-width: 480px) {
     display: none;
   }
 }
