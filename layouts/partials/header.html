@@ -15,8 +15,17 @@
             </dd>
         </dl>
         {{ end }}
+
+        <nav>
+            <div id="nav-title">links</div>
+            {{ range .Site.Params.nav }}
+            ·
+            <a class="nav-link" href="{{ .url }}">{{ .display }}</a>
+            {{ end }}
+            ·
+        </nav>
     </div>
     <div>
-        <img id="header-image" src="/avatar.jpg" width="128" height="128"/>
+        <img id="header-image" src="/avatar.jpg"/>
     </div>
 </header>

@@ -71,6 +71,7 @@ footer {
 
 #header-title {
   font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .header-social-link {
@@ -88,7 +89,7 @@ footer {
     transform: translateY(-50%);
   }
 
-  /* others  */
+  /* tablets (landscape) and above  */
   @media (min-width: 768px) {
     width: 192px;
     height: 192px;
@@ -126,5 +127,45 @@ dl.external-links {
 
   dt {
     font-weight: bold;
+  }
+}
+
+nav {
+  #nav-title {
+    font-weight: bold;
+  }
+
+  text-align: center;
+
+  /* tablets (landscape) and above */
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+  }
+
+  /* tablets (small res), phones (landscape) */
+  @media (min-width: 481px) and (max-width: 767px) {
+    font-size: 1.25rem;
+  }
+
+  /* phones */
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size: 1rem;
+  }
+
+  .nav-link {
+    /* tablets (landscape) and above */
+    @media (min-width: 768px) {
+      font-size: 1.1rem;
+    }
+
+    /* tablets (small res), phones (landscape) */
+    @media (min-width: 481px) and (max-width: 767px) {
+      font-size: 1rem;
+    }
+
+    /* phones */
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 0.9rem;
+    }
   }
 }
