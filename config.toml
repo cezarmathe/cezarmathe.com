@@ -42,7 +42,3 @@ url = "https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.socia
 [[params.nav]]
 url     = "/random"
 display = "random stuff"
-
-[[params.nav]]
-url     = "/books"
-display = "books"
