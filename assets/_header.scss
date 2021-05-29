@@ -1,0 +1,96 @@
+// header
+
+header {
+  margin-top: 2rem;
+  text-align: left;
+  font-size: 1.5rem;
+  display: flex;
+
+  .text-container {
+    flex: 75%;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    dl {
+      font-size: medium;
+
+      display: grid;
+      grid-template: auto / 45px 1fr;
+
+      dt dd {
+        margin: 0;
+      }
+
+      dt {
+        font-weight: bold;
+      }
+    }
+
+    nav {
+      text-align: center;
+
+      /* tablets (landscape) and above */
+      @media (min-width: 768px) {
+        font-size: 1.5rem;
+      }
+
+      /* tablets (small res), phones (landscape) */
+      @media (min-width: 481px) and (max-width: 767px) {
+        font-size: 1.25rem;
+      }
+
+      /* phones */
+      @media (min-width: 320px) and (max-width: 480px) {
+        font-size: 1rem;
+      }
+
+      a {
+        /* tablets (landscape) and above */
+        @media (min-width: 768px) {
+          font-size: 1.1rem;
+        }
+
+        /* tablets (small res), phones (landscape) */
+        @media (min-width: 481px) and (max-width: 767px) {
+          font-size: 1rem;
+        }
+
+        /* phones */
+        @media (min-width: 320px) and (max-width: 480px) {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  .image-container {
+    img {
+      border-radius: 5%;
+
+      @media (min-width:481px) {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      /* tablets (landscape) and above  */
+      @media (min-width: 768px) {
+        width: 192px;
+        height: 192px;
+      }
+
+      /* tablets (small res), phones (landscape) */
+      @media (min-width: 481px) and (max-width: 767px) {
+        width: 160px;
+        height: 160px;
+      }
+
+      /* phones */
+      @media (min-width: 320px) and (max-width: 480px) {
+        display: none;
+      }
+    }
+  }
+}

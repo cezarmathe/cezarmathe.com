@@ -13,21 +13,24 @@ minifyOutput = true
 
 [params]
 author               = "Armand-Cezar Mathe"
-avatar               = "/avatar.img"
 firstPublicationDate = 2019
 copyrightUrl         = "/copyright"
 
-[[params.links]]
+[params.avatar]
+src = "/avatar.jpg"
+alt = "A penguin."
+
+[[params.external_links]]
 name    = "email"
 display = "me@cezarmathe.com"
 link    = "mailto:me@cezarmathe.com"
 
-[[params.links]]
+[[params.external_links]]
 name    = "github"
 display = "cezarmathe"
 link    = "https://github.com/cezarmathe"
 
-[[params.links]]
+[[params.external_links]]
 name    = "mastodon"
 display = "@tvcx@mastodon.social"
 link    = "https://mastodon.social/@tvcx"
@@ -39,3 +42,7 @@ url = "https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.socia
 [[params.nav]]
 url     = "/random"
 display = "random stuff"
+
+[[params.nav]]
+url     = "/books"
+display = "books"

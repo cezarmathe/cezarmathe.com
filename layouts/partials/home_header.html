@@ -1,0 +1,32 @@
+<!-- header for the home page -->
+
+<div class="text-container">
+    <h1>{{ .Site.Title }}</h1>
+
+    {{ range .Site.Params.external_links }}
+    <dl class="dl-grid">
+        <dt>{{ .name }}</dt>
+        <dd>
+            <a {{ if .rel }} rel="{{ .rel }}" {{ end }} href="{{ .link }}">
+                {{ .display }}
+            </a>
+        </dd>
+    </dl>
+    {{ end }}
+
+    <nav>
+        <b>links</b><br/>
+
+        {{ range .Site.Params.nav }}
+        ·
+        <a href="{{ .url }}">{{ .display }}</a>
+        {{ end }}
+        ·
+    </nav>
+</div>
+
+<div class="image-container">
+    <img
+        src="{{ .Site.Params.avatar.src }}"
+        alt="{{ .Site.Params.avatar.alt }}" />
+</div>

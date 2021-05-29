@@ -1,31 +1,9 @@
 <header>
-    <div id="header-text">
-        <div id="header-title">{{ .Site.Title }}</div>
-
-        {{ range .Site.Params.links }}
-        <dl class="external-links dl-grid">
-            <dt>{{ .name }}</dt>
-            <dd>
-                <a
-                    {{ if .rel }} rel="{{ .rel }}" {{ end }}
-                    class="external-link"
-                    href="{{ .link }}">
-                        {{ .display }}
-                </a>
-            </dd>
-        </dl>
-        {{ end }}
-
-        <nav>
-            <div id="nav-title">links</div>
-            {{ range .Site.Params.nav }}
-            ·
-            <a class="nav-link" href="{{ .url }}">{{ .display }}</a>
-            {{ end }}
-            ·
-        </nav>
-    </div>
-    <div>
-        <img id="header-image" src="/avatar.jpg"/>
-    </div>
+    {{ if eq .Page.Kind "home" }}
+    {{- partial "home_header.html" . -}}
+    {{ else if eq .Page.Kind "404" }}
+    {{- partial "home_header.html" . -}}
+    {{ else }}
+    {{- partial "default_header.html" . -}}
+    {{ end }}
 </header>
