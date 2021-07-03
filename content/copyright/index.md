@@ -17,5 +17,5 @@ My avatar is an edited version of a [photo] by [Jeremy Bishop] on [Unsplash].
 [MIT]: https://choosealicense.com/licenses/mit/
 [readme]: /readme.txt
 [photo]: https://unsplash.com/photos/9zTafGVsv-c
-[Jeremy Bishop]: https://unsplash.com/photos/KFIjzXYg1RM
+[Jeremy Bishop]: https://jeremybishopphotography.com/
 [Unsplash]: https://unsplash.com/
