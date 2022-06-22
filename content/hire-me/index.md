@@ -2,7 +2,7 @@
 title = "Hire me"
 +++
 
-**NOTE** This page is a work in progress.
+_Grab a copy of [my resume](/resume.pdf)_.
 
 # About me
 
