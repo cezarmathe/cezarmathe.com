@@ -17,8 +17,8 @@ firstPublicationDate = 2019
 copyrightUrl         = "/copyright"
 
 [params.avatar]
-src = "/avatar.jpg"
-alt = "A penguin."
+src = "/hero.jpeg"
+alt = "A picture of me."
 
 [[params.external_links]]
 name    = "email"
