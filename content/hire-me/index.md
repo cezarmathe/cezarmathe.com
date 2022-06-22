@@ -29,7 +29,7 @@ Feel free to reach out to me, either on [LinkedIn] or via [email], or
 - Microservices & friends - associated tools, design patterns and best
   practices
 - Protocol Buffers
-- distributed systems
+- Distributed systems
 - Linux, system administration, networking and security
 - Bazel
 - Real-Time Bidding
