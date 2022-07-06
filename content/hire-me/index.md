@@ -2,7 +2,7 @@
 title = "Hire me"
 +++
 
-_Grab a copy of [my resume](/resume.pdf)_.
+_Grab a copy of [my resume](/resume.pdf?v=1)_.
 
 # About me
 
