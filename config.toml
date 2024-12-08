@@ -34,11 +34,3 @@ link    = "https://github.com/cezarmathe"
 name    = "linkedin"
 display = "Armand Cezar Mathe"
 link    = "https://www.linkedin.com/in/cezarmathe/"
-
-[[params.nav]]
-url     = "/random"
-display = "random stuff"
-
-[[params.nav]]
-url     = "/hire-me"
-display = "hire me"

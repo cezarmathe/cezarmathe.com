@@ -63,11 +63,3 @@ footer {
 }
 
 @import "header";
-
-#mastofeed-container {
-  text-align: center;
-}
-
-#mastofeed {
-  @extend %page
-}
