@@ -15,7 +15,7 @@ function main() {
         | tr -d 'v')"
 
     local hugo_shasums="hugo_${version}_checksums.txt"
-    local hugo_deb="hugo_${version}_Linux-64bit.deb"
+    local hugo_deb="hugo_${version}_linux-amd64.deb"
 
     wget "${DOWNLOAD_ENDPOINT}/v${version}/${hugo_shasums}"
     wget "${DOWNLOAD_ENDPOINT}/v${version}/${hugo_deb}"
